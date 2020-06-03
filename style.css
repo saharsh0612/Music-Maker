@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --DancingScript: 'DancingScript', cursive; 
+
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                 linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    overflow: hidden;
+    
+}
+
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 40px;
+    /*color: #fff;*/
+
+}
+
+header p{
+    font-size: 25px;
+    font-family: var(--DancingScript);
+    font-weight: 600;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.pads{
+    
+    width: 100%;
+    display: flex;
+}
+
+.logo{
+    height: 420px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.pads > div{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.pad1{
+    background: #60d394;
+}
+.pad1:hover{
+    transform: translateY(-20%);
+}
+
+.pad2{
+    background: #d3a560;
+}
+.pad2:hover{
+    transform: translateY(-20%);
+}
+
+.pad3{
+    background: #2ee016;
+}
+.pad3:hover{
+    transform: translateY(-20%);
+}
+
+.pad4{
+    background: #f58e08;
+}
+.pad4:hover{
+    transform: translateY(-20%);
+}
+
+.pad5{
+    background: #3e0cf3;
+}
+.pad5:hover{
+    transform: translateY(-20%);
+}
+
+.pad6{
+    background: #eb0a8d;
+}
+.pad6:hover{
+    transform: translateY(-20%);
+}
+
+@keyframes jump {
+    0%{
+        bottom: 0%;
+        left: 20%;
+        z-index: 1;
+    }
+
+    50%{
+        bottom: 50%;
+        left: 50%;
+        z-index: 1;
+    }
+
+    100%{
+        bottom: 0%;
+        left: 80%;
+        z-index: 1;
+    }
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
